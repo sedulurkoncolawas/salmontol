@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misi untuk Mendapatkan iPhone</title>
+    <style>
+        body {
+            background-color: black; /* Latar belakang hitam */
+            color: white; /* Warna teks putih */
+            font-family: Arial, sans-serif; /* Jenis font */
+            padding: 20px; /* Ruang dalam */
+            text-transform: capitalize;
+        }
+
+        h2 {
+            color: #ff9900; /* Warna judul */
+        }
+
+        .peler {
+            font-size: 18px; /* Ukuran teks */
+            color: white;
+            font-weight: bold;
+            margin-bottom: 10px; /* Jarak antara paragraf */
+        }
+        
+        .misi {
+            color: tomato;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        p {
+          color: chocolate;
+        }
+        
+        .salmasu {
+          width: 200px;
+          height: 200px;
+          display: block;
+          margin: auto;
+        }
+        
+        .eberardos {
+          width: 200px; 
+          height: 100px;
+          display: block;
+          margin: auto;
+        }
+        
+           footer {
+     color: #737373;
+     text-align: center;
+     font-family: Sans-Serif;
+     font-size: 15px;
+     /*background: #F0F0F0;
+     height: 55px;
+     width: 100%;
+     line-height: 55px;*/
+   }
+    </style>
+    <script>
+        // Fungsi untuk menambahkan 1 pada misi setiap hari
+        function tambahMisi() {
+            var misiElements = document.querySelectorAll(".misi");
+            misiElements.forEach(function(misiElement) {
+                var misi = misiElement.textContent.split('/');
+                var batas = parseInt(misi[1]);
+
+                // Mengecek jika tanggal terakhir diperbarui
+                var tanggalTerakhir = localStorage.getItem('tanggalTerakhir');
+                var sekarang = new Date();
+                var hariIni = sekarang.getDate();
+                var bulanIni = sekarang.getMonth() + 1;
+                var tahunIni = sekarang.getFullYear();
+                var tanggalIni = `${tahunIni}-${bulanIni}-${hariIni}`;
+
+                if (!tanggalTerakhir || tanggalTerakhir !== tanggalIni) {
+                    if (parseInt(misi[0]) < batas) {
+                        misi[0]++; // Menambah misi jika belum mencapai batas
+                        misiElement.textContent = `${misi[0]}/${batas}`;
+                    }
+                    localStorage.setItem('tanggalTerakhir', tanggalIni);
+                }
+            });
+        }
+
+        // Panggil fungsi tambahMisi setiap kali halaman dimuat
+        window.onload = function() {
+            tambahMisi();
+        };
+    </script>
+</head>
+<body>
+    <h2>/ misi salma autis mendapatkan iphone</h2>
+    <img class="salmasu" src="https://i.postimg.cc/DZ6rpnDj/IMG-20240419-WA0096.jpg" alt="Sugiarto ewe Prapti"/>
+    <hr color="red">
+<marquee scrollamount="8">ada <span style="color: red; font-weight: bold;">pacar</span> lupa kawan udah <span style="color: red; font-weight: bold;">gendut</span> banyak <span style="color:red; font-weight: bold;">gaya</span> siapa lagi kalo bukan<span style="color: red; font-weight: bold;"> salma autis&#x1F639;</span></marquee>
+    <hr color="red">
+    <div class="peler">
+        <p># MISI</p>
+        <ul style="list-style-type: square;">
+            <li>Dicolmekin bapak <span class="misi">(0/100)</span></li>
+            <li>Dicolmekin kakak <span class="misi">(0/50)</span></li>
+            <li>Dicolmekin kakek <span class="misi">(0/30)</span></li>
+            <li>Dicolmekin emak <span class="misi">(0/15)</span></li>
+            <li>Sepong kontol bapak <span class="misi">(0/70)</span></li>
+            <li>Sepong kontol kakek <span class="misi">(0/20)</span></li>
+            <li>Sepong kontol kakak <span class="misi">(0/25)</span></li>
+            <li>Di entot bapak <span class="misi">(0/35)</span></li>
+            <li>Di entot kakek<span class="misi"> (0/100)</span></li>
+            <li>Di entot kakak  <span class="misi">(0/45)</span></li>
+            <li>Kocokin kontol bapak  <span class="misi">(0/40)</span></li>
+                        <li>Kocokin kontol kakek <span class="misi">(0/100)</span></li>
+                                    <li>Kocokin kontol kakak <span class="misi">(0/5)</span></li>
+                    <li>Kocokin kontol sepupu <span class="misi">(0/25)</span></li>
+                 <li>Ngewe sekeluarga  <span class="misi">(50/55)</span></li>            
+        </ol>
+    </div>
+    <footer>&copy By lu1s - d4n - f4nz - k4lz - h1ro </footer>
+    <img class="eberardos" src="https://i.postimg.cc/1zBTLmRb/IMG-20240419-WA0105.jpg" alt="EBERARDOS" />
+</body>
+  </html>
