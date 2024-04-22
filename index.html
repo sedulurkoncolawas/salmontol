@@ -5,44 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:image" content="https://b.top4top.io/p_3031g7hp40.jpg">
             <link rel="shortcut icon" href="https://b.top4top.io/p_3031g7hp40.jpg" type="image/x-icon" />
-    <meta property="og:description" content="Salma di ewe sugiarto, kakeknya, kakaknya, adeknya, sepupunya">
+    <meta property="og:description" content="ini adalah info pribadi salma">
     <meta property="og:url" content="https://salma-autis.vercel.app/">
-    <title>Salma Mau Aipong Diperkosa Gais</title>
+    <link href="https://fonts.cdnfonts.com/css/league-mono" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/finlandica" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Info Pribadi Salma Cik</title>
     <style>
         body {
             background-color: black; /* Latar belakang hitam */
             color: white; /* Warna teks putih */
-            font-family: Arial, sans-serif; /* Jenis font */
             padding: 20px; /* Ruang dalam */
             text-transform: capitalize;
         }
 
         h2 {
-            color: #ff9900; /* Warna judul */
+            color: #ff9; /* Warna judul */
+            font-family: 'Finlandica', sans-serif;
+            font-style: italic;
         }
 
         .peler {
-            font-size: 18px; /* Ukuran teks */
+            font-size: 16px; /* Ukuran teks */
+            border: 1px solid salmon;
+            border-radius: 5px;
             color: white;
-            font-weight: bold;
+            font-family: 'League Mono', sans-serif;
+            text-align: center;
             margin-bottom: 10px; /* Jarak antara paragraf */
         }
         
-        .misi {
-            color: tomato;
-            font-weight: bold;
-            text-decoration: none;
+        .private {
+          align-items: center;
+          position: relative;
+          top: 2px;
         }
         
         p {
-          color: chocolate;
+          color: tomato;
         }
         
-        .salmasu {
+        ul {
+          list-style-type: circle;
+        }
+        
+        ul li {
+          color: hsl(332.6,94%,66.2%);
+          font-family: Comic Sans MS;
+          margin-bottom: 25px;
+          font-weight: bold;
+        }
+        
+       li a {
+          color: skyblue;
+          text-decoration: none;
+       }
+       
+       li a:hover {
+         text-decoration: underline;
+       }
+        
+         .salmon {
           width: 200px;
           height: 200px;
           display: block;
           margin: auto;
+        }
+        
+        marquee {
+          font-family: Sans-Serif;
         }
         
         .eberardos {
@@ -50,6 +82,69 @@
           height: 100px;
           display: block;
           margin: auto;
+        }
+        
+        .text-tengah {
+          text-align: center;
+        }
+        
+        .text {
+          color: pink;
+        }
+        
+.whatsapp-container {
+      display: inline-block;
+      color: white;
+      margin-right: 5px; /* Ubah angka sesuai dengan kebutuhan jarak */
+}
+        
+.moving-text {
+  position: relative; /* Menjadikan posisi relatif agar bisa menggunakan transform */
+  animation: bounce 2s ease-in-out infinite; /* Menggunakan animasi bounce */
+}
+
+@keyframes bounce {
+  0%, 100% { top: 0; } /* Nilai awal dan akhir posisi */
+  50% { top: -20px; } /* Nilai posisi saat pertengahan animasi */
+}
+        
+.material-symbols-outlined {
+      margin-right: 5px; /* Jarak antara ikon dan teks */
+      font-size: 18px; /* Ukuran ikon */
+      color: white; /* Warna ikon */
+    }
+    
+    .agama {
+      align-items: center;
+          position: relative;
+          top: 4px;
+    }
+    
+    .sikap {
+      align-items: center;
+          position: relative;
+          top: 4px;
+    }
+    
+        .kosakata {
+          align-items: center;
+          position: relative;
+          top: 4px;
+        }
+        
+        .map {
+      display: flex;
+      align-items: center;
+    }
+        
+        .black {
+          color: #5f3e09;
+          margin-right: 5px;
+        }
+        
+        .lahirnya-bocah-autis {
+          color: white;
+          margin-right: 5px;
         }
         
            footer {
@@ -62,65 +157,48 @@
      width: 100%;
      line-height: 55px;*/
    }
+  
     </style>
-    <script>
-        // Fungsi untuk menambahkan 1 pada misi setiap hari
-        function tambahMisi() {
-            var misiElements = document.querySelectorAll(".misi");
-            misiElements.forEach(function(misiElement) {
-                var misi = misiElement.textContent.split('/');
-                var batas = parseInt(misi[1]);
-
-                // Mengecek jika tanggal terakhir diperbarui
-                var tanggalTerakhir = localStorage.getItem('tanggalTerakhir');
-                var sekarang = new Date();
-                var hariIni = sekarang.getDate();
-                var bulanIni = sekarang.getMonth() + 1;
-                var tahunIni = sekarang.getFullYear();
-                var tanggalIni = `${tahunIni}-${bulanIni}-${hariIni}`;
-
-                if (!tanggalTerakhir || tanggalTerakhir !== tanggalIni) {
-                    if (parseInt(misi[0]) < batas) {
-                        misi[0]++; // Menambah misi jika belum mencapai batas
-                        misiElement.textContent = `${misi[0]}/${batas}`;
-                    }
-                    localStorage.setItem('tanggalTerakhir', tanggalIni);
-                }
-            });
-        }
-
-        // Panggil fungsi tambahMisi setiap kali halaman dimuat
-        window.onload = function() {
-            tambahMisi();
-        };
-    </script>
 </head>
+<script>
+</script>
 <body>
-    <h2>/ misi salma autis mendapatkan iphone</h2>
-    <img class="salmasu" src="https://b.top4top.io/p_3031g7hp40.jpg" alt="Sugiarto ewe Salma"/>
+<div class="moving-text-container">
+  <h2 class="moving-text">> Salma Autis <</h2>
+</div>
+<img class="salmon" src="https://b.top4top.io/p_3031g7hp40.jpg" alt="Sugiarto Negro">
     <hr color="red">
 <marquee scrollamount="8">ada <span style="color: red; font-weight: bold;">pacar</span> lupa kawan udah <span style="color: red; font-weight: bold;">gendut</span> banyak <span style="color:red; font-weight: bold;">gaya</span> siapa lagi kalo bukan<span style="color: red; font-weight: bold;"> salma autis&#x1F639;</span></marquee>
     <hr color="red">
-    <div class="peler">
-        <p># MISI</p>
-        <ul style="list-style-type: square;">
-            <li>Dicolmekin bapak <span class="misi">(0/100)</span></li>
-            <li>Dicolmekin kakak <span class="misi">(0/50)</span></li>
-            <li>Dicolmekin kakek <span class="misi">(0/30)</span></li>
-            <li>Dicolmekin emak <span class="misi">(0/15)</span></li>
-            <li>Sepong kontol bapak <span class="misi">(0/70)</span></li>
-            <li>Sepong kontol kakek <span class="misi">(0/20)</span></li>
-            <li>Sepong kontol kakak <span class="misi">(0/25)</span></li>
-            <li>Di entot bapak <span class="misi">(0/35)</span></li>
-            <li>Di entot kakek<span class="misi"> (0/100)</span></li>
-            <li>Di entot kakak  <span class="misi">(0/45)</span></li>
-            <li>Kocokin kontol bapak  <span class="misi">(0/40)</span></li>
-                        <li>Kocokin kontol kakek <span class="misi">(0/100)</span></li>
-                                    <li>Kocokin kontol kakak <span class="misi">(0/5)</span></li>
-                    <li>Kocokin kontol sepupu <span class="misi">(0/25)</span></li>
-                 <li>Ngewe sekeluarga  <span class="misi">(50/55)</span></li>            
-        </ol>
-    </div>
+        <h3 class="peler"><span class="material-symbols-outlined private">
+lock
+</span>Salma Personal Information</h3>
+        <ul>
+          <li>Name : <div class="text">&#x1F930; Salma apriliyani salsabilanjing</div></li>
+          <li>Residence : <div class="map"><span class="material-symbols-outlined">
+location_on
+</span><span style="color: pink">Lampung Selatan, Bandar Lampung, Sidobasuki</span></li>
+          <li>Date Of Birth : <div class="text"><i class="fa-solid fa-cake-candles lahirnya-bocah-autis"></i>5 April 2008 <span style="color:white; font-size:11px; background: Fuchsia; position: relative; bottom: 5px; border-radius: 10px; border: 1px solid Fuchsia;">tua tapi sifat kek bocah</span></div></li>
+          <li>Age : <div class="text">16 Tahun <span style="color:white; font-size:11px; background: Fuchsia; position: relative; bottom: 5px; border-radius: 10px; border: 1px solid Fuchsia;">tua tapi tolol</span></div></li>
+                    <li>Religion : <div class="text"><span class="material-symbols-outlined agama">
+mosque
+</span>Islam <span style="color:white; font-size:11px; background: Fuchsia; position: relative; bottom: 5px; border-radius: 10px; border: 1px solid Fuchsia;">aselinya atheis gais</span></div></li>
+          <li>Phone number : <div class="link"><div class="whatsapp-container">
+     <i class="fab fa-whatsapp"></i></div><a href="https://wa.me/+6288286272458?text=sugiarto+anjing+prapti+tolol+salma+yapit">+62 882-8627-2458</a> <span style="color:white; font-size:11px; background: Fuchsia; position: relative; bottom: 5px; border-radius: 10px; border: 1px solid Fuchsia;">spam aja wak</span></li></div>
+          <li>Father's name : <div class="text">&#x1F9D4; Sugiarto Anjing <span style="color:white; font-size:11px; background: Fuchsia; position: relative; bottom: 5px; border-radius: 10px; border: 1px solid Fuchsia;">bapaknya suka coli</span></div></li>
+          <li>Mother's name : <div class="text">&#x1F469; Prapti Peler <span style="color:white; font-size:11px; background: Fuchsia; position: relative; bottom: 5px; border-radius: 10px; border: 1px solid Fuchsia;">emaknya suka colmek</span></div></li>
+          <li>Skin : <div class="text"><i class="fa-solid fa-user black"></i>Negro, Item, Hytam, Black, Dark, Shadow, Gelap, Nigga <span style="color:white; font-size:11px; background: Fuchsia; position: relative; bottom: 5px; border-radius: 10px; border: 1px solid Fuchsia;">ratu rohingya nih</span></div></li>
+          <li>Brain : <div class="text">&#129504; Autism, goblok, tolol, dongo <span style="color:white; font-size:11px; background: Fuchsia; position: relative; bottom: 5px; border-radius: 10px; border: 1px solid Fuchsia;">rill</span></div></li>
+          <li>Attitude : <div class="text"><span class="material-symbols-outlined sikap">
+psychology
+</span>Egois, Playing Victim, Sok keras </div></li>
+          <li>Unknown vocabulary : <div class="text"><span class="material-symbols-outlined kosakata">
+dictionary
+</span>Only, Batu Nisan, Angpao <span style="color:white; font-size:11px; background: Fuchsia; position: relative; bottom: 5px; border-radius: 10px; border: 1px solid Fuchsia;">gblk bet</span></div></li>
+          <li>Ex : <div class="text">&#x1F494; Devan, Rey, Husein, Arya, Adit, Tino, Kevin, Iky, Charless <span style="color:white; font-size:11px; background: Fuchsia; position: relative; bottom: 5px; border-radius: 10px; border: 1px solid Fuchsia;">sasimo cik</span></div></li>
+        </ul>
+        <hr color="#737373">
+        <br>
     <footer>&copy By lu1s - d4n - f4nz - k4lz - h1ro - n0eX</footer>
     <img class="eberardos" src="https://a.top4top.io/p_3031gt4jj0.jpg" alt="EBERARDOS" />
 </body>
