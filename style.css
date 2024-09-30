@@ -1,0 +1,179 @@
+       body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-image: url('https://i.ibb.co.com/PgctRSM/foto-anjing-aesthetic-4.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 20px;
+            text-transform: capitalize;
+        }
+ 
+         .image-container {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;  /* Menambahkan scroll bar horizontal */
+  scrollbar-width: auto;  /* Menyesuaikan lebar scrollbar */
+  padding-bottom: 10px;
+}
+
+.container img,.image-container img {
+  width: 25%;  
+  height: 100px;
+  border-radius: 5px;
+}
+ 
+      .material-symbols-outlined {
+    margin-right: 3px;
+    font-size: 18px; /* Ukuran ikon */
+    color: white;
+    vertical-align: middle;
+}
+
+marquee {
+  background: rgba(0,0,0,0.259);
+  font-family: Sans-Serif;
+}
+
+hr {
+    border: 1px solid salmon;
+    width: 100%;
+    height: 2px;
+}
+
+     .private {
+       margin-top: -5px;
+     }
+     
+     .fa-user,.fa-cake-candles {
+       color: white;
+     }
+
+        h2 {
+            color: #ff9;
+            font-family: 'Finlandica', sans-serif;
+            font-style: italic;
+        }
+
+        .peler {
+            font-size: 16px;
+            border: 1px solid #ff9;
+            padding: 5px;
+            background: black;
+            border-radius: 5px;
+            color: white;
+            font-family: 'League Mono', sans-serif;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .list {
+            background-color: rgba(0,0,0,0.259);
+            padding: 3px;
+            font-family: Sans-Serif;
+            border-radius: 5px;
+            border: 1px white solid;
+            backdrop-filter: blur(5px);
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+
+        .salmon {
+            width: 200px;
+            height: 200px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        ul li a {
+            color: skyblue;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .text {
+            color: red;
+            text-shadow: 1px 1px 10px #000, 1px 1px 10px #ccc;
+        }
+        .agama,.sikap {
+          color: white;
+        }
+
+        .moving-text {
+            position: relative;
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { top: 0; }
+            50% { top: -20px; }
+        }
+
+        footer {
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #999;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        #loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .loading-spinner {
+            border: 8px solid salmon;
+            border-top: 8px solid transparent;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .swal2-title,
+        .swal2-content {
+    font-family: 'Red Hat Mono', sans-serif;
+}
+.swal2-html-container {
+  font-family: Sans-Serif;
+}
+
+  .confirm-btn-class {
+    background-color: #1877F2 !important;
+    color: white !important;
+  }
+  
+  .cancel-btn-class {
+    background-color: grey !important;
+    color: white !important;
+  }
